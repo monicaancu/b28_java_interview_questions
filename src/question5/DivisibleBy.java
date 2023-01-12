@@ -1,4 +1,4 @@
-package src.question5;
+package question5;
 
 public class DivisibleBy {
     public static void main(String[] args) {
