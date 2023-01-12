@@ -33,6 +33,8 @@ public class NegativeToPositive {
 
            }
 
+        }else {
+            reversedNum = n;
         }
 
         return reversedNum;
