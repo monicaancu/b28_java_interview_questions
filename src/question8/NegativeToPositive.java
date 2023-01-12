@@ -33,19 +33,7 @@ public class NegativeToPositive {
 
            }
 
-        }else {
-            while(n != 0){
-
-                int lastDigit = n%10;
-
-                reversedNum = reversedNum * 10 + lastDigit;
-
-                n /= 10;
-
-            }
         }
-
-
 
         return reversedNum;
     }
