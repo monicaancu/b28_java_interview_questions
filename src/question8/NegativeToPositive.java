@@ -4,28 +4,54 @@ public class NegativeToPositive {
 
     public static void main(String[] args) {
 
+        int num = -125;
 
-        int negNum = -12;
-
-       /* int a = -212;
-
-        a = Math.abs(a);
-
-        System.out.println(a);
-
-        */
-
-        System.out.println(negToPos(negNum));
+        System.out.println(reverseNeg(num));
     }
 
-    public static int negToPos(int n) {
+
+
+    public static int reverseNeg (int n) {
+
+        int reversedNum = 0;
         int posNum = 0;
 
-        for (int i = 0; i > n; i--) {
-            posNum++;
+
+        if(n < 0 ) {
+
+            for (int i = 0; i > n; i--) {
+                posNum++;
+            }
+
+           while(posNum != 0){
+
+               int lastDigit = posNum%10;
+
+               reversedNum = reversedNum * 10 + lastDigit;
+
+               posNum /= 10;
+
+           }
+
+        }else {
+            while(n != 0){
+
+                int lastDigit = n%10;
+
+                reversedNum = reversedNum * 10 + lastDigit;
+
+                n /= 10;
+
+            }
         }
 
-        return posNum;
+
+
+        return reversedNum;
     }
+
+
+
+
 
 }
